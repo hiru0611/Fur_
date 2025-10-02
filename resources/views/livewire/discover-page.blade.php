@@ -83,7 +83,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                         @foreach($deals as $deal)
                             <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                                <img src="{{ $deal['image'] }}" alt="{{ $deal['title'] }}" class="w-full h-64 object-cover">
+                                <img src="{{ $deal['base64_image'] ?: $deal['image'] }}" alt="{{ $deal['title'] }}" class="w-full h-64 object-cover">
                                 <div class="p-4">
                                     <h3 class="font-semibold">{{ $deal['title'] }}</h3>
                                     <p class="text-sm text-gray-600">{{ $deal['distance'] }}</p>
@@ -106,7 +106,7 @@
                     <div class="space-y-8">
                         @foreach($events as $event)
                             <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                                <img src="{{ $event['image'] }}" alt="{{ $event['title'] }}" class="w-full h-[32rem] object-cover">
+                                <img src="{{ $event['base64_image'] ?: $event['image'] }}" alt="{{ $event['title'] }}" class="w-full h-[32rem] object-cover">
                                 <div class="p-6">
                                     <div class="flex items-center gap-3 text-sm text-gray-500 mb-2">
                                         <span>👤 {{ $event['author'] }}</span>

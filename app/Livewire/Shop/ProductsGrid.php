@@ -52,6 +52,15 @@ class ProductsGrid extends Component
 
         $products = $query->take(36)->get();
 
+        // Convert images to base64 for each product
+        $products->each(function ($product) {
+            $product->images->each(function ($image) {
+                if (!$image->base64_image && $image->image_path) {
+                    $image->base64_image = \App\Services\ImageService::convertToBase64($image->image_path);
+                }
+            });
+        });
+
         $categories = Category::orderBy('name')->get(['name','slug']);
 
         return view('livewire.shop.products-grid', [

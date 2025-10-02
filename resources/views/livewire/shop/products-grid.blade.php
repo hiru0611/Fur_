@@ -4,7 +4,8 @@
             <div class="bg-white shadow rounded-xl p-4 flex flex-col">
                 <div class="h-64 w-full bg-gray-50 rounded mb-3 flex items-center justify-center overflow-hidden">
                     @if($product->images->count())
-                        <img src="{{ asset('storage/' . $product->images->first()->image_path) }}" 
+                        @php $firstImage = $product->images->first(); @endphp
+                        <img src="{{ $firstImage->base64_image ?: asset('storage/' . $firstImage->image_path) }}" 
                              alt="{{ $product->name }}" 
                              class="max-h-full max-w-full object-contain">
                     @else

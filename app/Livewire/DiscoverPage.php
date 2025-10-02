@@ -56,11 +56,18 @@ class DiscoverPage extends Component
         }
         
         $this->deals = $dealsQuery->get()->map(function ($deal) {
+            // Convert image to base64 if not already converted
+            $base64Image = $deal->base64_image;
+            if (!$base64Image && $deal->image) {
+                $base64Image = \App\Services\ImageService::convertToBase64($deal->image);
+            }
+            
             return [
                 'title' => $deal->title,
                 'distance' => $deal->distance,
                 'discount' => $deal->discount,
-                'image' => asset('storage/' . $deal->image),
+                'image' => $base64Image ?: asset('storage/' . $deal->image),
+                'base64_image' => $base64Image,
             ];
         })->toArray();
 
@@ -76,12 +83,19 @@ class DiscoverPage extends Component
         }
         
         $this->events = $eventsQuery->get()->map(function ($event) {
+            // Convert image to base64 if not already converted
+            $base64Image = $event->base64_image;
+            if (!$base64Image && $event->image) {
+                $base64Image = \App\Services\ImageService::convertToBase64($event->image);
+            }
+            
             return [
                 'title' => $event->title,
                 'author' => $event->author,
                 'date' => $event->event_date->format('F j, Y'),
                 'excerpt' => $event->excerpt,
-                'image' => asset('storage/' . $event->image),
+                'image' => $base64Image ?: asset('storage/' . $event->image),
+                'base64_image' => $base64Image,
             ];
         })->toArray();
     }
