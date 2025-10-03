@@ -24,10 +24,7 @@
 
             <!-- Right Puppy Image -->
             <div class="flex-1 mt-8 lg:mt-0">
-                <video class="mx-auto w-full max-w-[520px] drop-shadow-lg" style="width:520px;max-width:100%;" autoplay loop muted playsinline>
-                    <source src="/videos/home.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="/images/puppy.png" alt="Cute Puppy" class="mx-auto w-full max-w-[520px] drop-shadow-lg" style="width:520px;max-width:100%;">
             </div>
         </div>
     </section>
