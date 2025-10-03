@@ -11,15 +11,21 @@ use App\Http\Controllers\Api\EventController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\ContactController;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 Route::post('/login', function (Request $request) {
-    $credentials = $request->only('email', 'password');
+    $request->validate([
+        'email' => 'required|email',
+        'password' => 'required'
+    ]);
 
-    if (!Auth::attempt($credentials)) {
+    if (!Auth::attempt($request->only('email', 'password'))) {
         return response()->json(['message' => 'Invalid login'], 401);
     }
 
     $user = Auth::user();
+
+    // Create Sanctum token
     $token = $user->createToken('api-token')->plainTextToken;
 
     return response()->json([
