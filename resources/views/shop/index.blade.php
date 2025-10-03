@@ -51,7 +51,7 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 @foreach($categories as $category)
                     <a href="{{ route('shop.category', $category->slug) }}" 
-                       class="bg-white/90 backdrop-blur-sm shadow-lg rounded-xl p-6 flex flex-col items-center hover:shadow-xl cursor-pointer transition-all duration-200 hover:scale-105 hover:bg-white">
+                       class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center hover:shadow-xl cursor-pointer transition-all duration-200 hover:scale-105">
                         @if($category->slug === 'dog')
                             <img src="{{ asset('images/dog.png') }}" 
                                  class="h-16 mb-3 object-contain" 
