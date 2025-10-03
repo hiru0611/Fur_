@@ -1,33 +1,54 @@
 <x-app-layout>
     <!-- HERO (cream background + optional background image) -->
-    <section
-        class="relative bg-[] overflow-hidden"
-        style="background-image: url('/images/hero-bg.png'); background-position: bottom; background-size: cover;">
-        <!-- optional overlay to keep cream tone over background image -->
-        <div class="absolute inset-0 bg-[] opacity-90 pointer-events-none"></div>
+   <section 
+        class="relative overflow-hidden"
+        style="background-image: url('/images/hero-bg.png'); background-position: center; background-size: cover;">
+        
+        <!-- Overlay (subtle cream gradient) -->
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
 
-        <div class="relative max-w-7xl mx-auto px-6 py-44 lg:py-52 flex flex-col lg:flex-row items-center">
+        <div class="relative max-w-7xl mx-auto px-6 py-32 lg:py-48 flex flex-col lg:flex-row items-center">
+            
             <!-- Left Text -->
-            <div class="flex-1 space-y-6 lg:pr-12">
-                <p class="text-[#b97456] font-semibold uppercase tracking-wide">Fast and Free Delivery</p>
+            <div class="flex-1 space-y-6 lg:pr-12 text-center lg:text-left">
+                <p class="text-[#b97456] font-semibold uppercase tracking-wide">
+                    Fast and Free Delivery
+                </p>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
                     60% OFF! <br class="hidden md:block"> On All Puppy Food
                 </h1>
-                <p class="text-lg text-gray-600 max-w-xl">Limited time winter sale — premium nutrition at a fraction of the price.</p>
-                <div class="flex items-center space-x-4">
-                    <a href="#" class="inline-block bg-[#b97456] text-white px-8 py-4 rounded-xl shadow-md hover:bg-[#a56348] transition text-lg font-semibold">
+                <p class="text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
+                    Limited time winter sale — premium nutrition at a fraction of the price.
+                </p>
+                
+                <div class="flex items-center justify-center lg:justify-start space-x-4 mt-6">
+                    <a href="#"
+                    class="inline-block bg-[#b97456] text-white px-8 py-4 rounded-xl shadow-md hover:bg-[#a56348] transition text-lg font-semibold">
                         Checkout Now →
                     </a>
                     <a href="#" class="text-gray-700 hover:underline">View All Puppy Food</a>
                 </div>
             </div>
 
-            <!-- Right Puppy Image -->
-            <div class="flex-1 mt-8 lg:mt-0">
-                <img src="/images/puppy.png" alt="Cute Puppy" class="mx-auto w-full max-w-[520px] drop-shadow-lg" style="width:520px;max-width:100%;">
+            <!-- Right Puppy Image / Video -->
+            <div class="flex-1 mt-10 lg:mt-0 flex justify-center">
+                <!-- Image -->
+                <img src="/images/puppy.png" 
+                    alt="Cute Puppy" 
+                    class="mx-auto w-full max-w-[480px] drop-shadow-lg rounded-xl object-contain" 
+                    style="max-width: 100%;">
+
+                <!-- If you want video instead of image, replace above <img> with this: -->
+                <!--
+                <video class="mx-auto w-full max-w-[480px] rounded-xl shadow-lg" autoplay loop muted playsinline>
+                    <source src="/videos/home.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                -->
             </div>
         </div>
     </section>
+
 
     <!-- REAL PET FOOD FEATURE -->
     <section class="bg-white py-8">
