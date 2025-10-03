@@ -158,6 +158,8 @@
         
     </div>
 
+     <div class="py-16"></div>
+
     <!-- Footer -->
     @include('components.footer')
 
