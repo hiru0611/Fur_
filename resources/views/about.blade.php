@@ -60,9 +60,9 @@
     <!-- Main Content -->
     <section class="relative z-10 pb-20">
         <div class="bg-white shadow-lg rounded-xl overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="max-w-7xl mx-auto px-6 py-16">
                 <!-- Our Story -->
-                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
                     <div>
                         <h2 class="text-2xl font-bold text-[#593d2e] mb-4">Our Story</h2>
                         <p class="text-gray-600 mb-4">
@@ -82,8 +82,8 @@
                 </div>
 
                 <!-- Pet Categories Showcase -->
-                <div class="mb-16">
-                    <h2 class="text-2xl font-bold text-[#593d2e] mb-8 text-center">Pets We Love</h2>
+                <div class="mb-20">
+                    <h2 class="text-2xl font-bold text-[#593d2e] mb-12 text-center">Pets We Love</h2>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                         <div class="bg-[#fef6f3] rounded-xl p-6 text-center hover:shadow-lg transition">
                             <img src="{{ asset('images/dog.png') }}" alt="Dogs" class="h-16 w-16 mx-auto mb-3">
@@ -109,8 +109,8 @@
                 </div>
 
                 <!-- Testimonials -->
-                <div class="mb-16">
-                    <h2 class="text-2xl font-bold text-[#593d2e] mb-8 text-center">What Our Customers Say</h2>
+                <div class="mb-20">
+                    <h2 class="text-2xl font-bold text-[#593d2e] mb-12 text-center">What Our Customers Say</h2>
                     <div class="grid md:grid-cols-2 gap-8">
                         <div class="bg-[#fef6f3] p-6 rounded-xl">
                             <p class="text-gray-700 mb-4">
@@ -140,8 +140,8 @@
                 </div>
 
                 <!-- Our Team -->
-                <div class="mb-16">
-                    <h2 class="text-2xl font-bold text-[#593d2e] mb-8 text-center">Meet Our Team</h2>
+                <div class="mb-20">
+                    <h2 class="text-2xl font-bold text-[#593d2e] mb-12 text-center">Meet Our Team</h2>
                     <div class="grid md:grid-cols-3 gap-8">
                         <div class="text-center">
                             <div class="bg-white rounded-full p-4 w-24 h-24 mx-auto mb-4 shadow-lg">
@@ -164,20 +164,6 @@
                             <h3 class="font-semibold text-[#593d2e] mb-1">Sophia Lee</h3>
                             <p class="text-sm text-gray-500">Pet Trainer</p>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Call to Action -->
-                <div class="bg-[#fef6f3] rounded-xl p-8 text-center">
-                    <h2 class="text-2xl font-bold text-[#593d2e] mb-4">Ready to Give Your Pet the Best?</h2>
-                    <p class="text-gray-600 mb-6">Join thousands of happy pet owners who trust us with their furry family members.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="{{ route('shop.index') }}" class="bg-[#b97456] text-white px-6 py-3 rounded-lg hover:bg-[#593d2e] transition">
-                            Shop Now
-                        </a>
-                        <a href="{{ route('discover.index') }}" class="border-2 border-[#b97456] text-[#b97456] px-6 py-3 rounded-lg hover:bg-[#b97456] hover:text-white transition">
-                            Discover Events
-                        </a>
                     </div>
                 </div>
             </div>
