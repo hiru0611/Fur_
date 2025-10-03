@@ -58,7 +58,7 @@
     </section>
 
     <!-- Main Content -->
-    <section class="relative -mt-20 z-10 pb-20">
+    <section class="relative z-10 pb-20">
         <livewire:discover-page />
     </section>
 
