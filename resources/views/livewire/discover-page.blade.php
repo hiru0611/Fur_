@@ -1,4 +1,4 @@
-<div class="bg-white">
+<div class="bg-white shadow-lg rounded-xl overflow-hidden">
     <div class="container mx-auto px-6 py-12 grid grid-cols-4 gap-8">
         <!-- Sidebar -->
         <aside class="col-span-1">
@@ -139,8 +139,6 @@
             <img src="/images/support/cat.png" class="w-48" alt="Support Animals">
         </div>
     </section>
-
-    @include('components.footer')
 </div>
 
 <script>
