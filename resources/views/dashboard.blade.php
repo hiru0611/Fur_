@@ -25,7 +25,7 @@
             <!-- Right Video -->
             <div class="flex-1 mt-8 lg:mt-0">
                 <video 
-                    src="/videos/home.mp4" 
+                    src="/videos/home (3).mp4" 
                     autoplay 
                     muted 
                     loop 
