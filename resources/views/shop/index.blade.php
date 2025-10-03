@@ -30,8 +30,68 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
     </style>
-    
-    <div class="container mx-auto px-6 py-8">
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-bottom" style="background-image: url('{{ asset('images/hero-bg.png') }}');">
+        <div class="max-w-7xl mx-auto px-6 py-24">
+            <!-- Main Heading -->
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold text-gray-900">Shop for Your Beloved Pets</h1>
+                </div>
+                <div>
+                    <p class="text-gray-600 text-sm">
+                        Discover premium pet supplies, toys, food, and accessories for dogs, cats, fish, and rabbits. 
+                        Quality products that your furry, scaly, and fluffy friends will love.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Shop Features -->
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-[#b97456] rounded-full flex items-center justify-center mb-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5zM8 15v-4h4v4H8z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-[#593d2e] mb-2">Premium Quality</h3>
+                    <p class="text-gray-600 text-sm">Only the best products for your pets' health and happiness</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-[#b97456] rounded-full flex items-center justify-center mb-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-[#593d2e] mb-2">All Pet Types</h3>
+                    <p class="text-gray-600 text-sm">Products for dogs, cats, fish, rabbits, and more</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-[#b97456] rounded-full flex items-center justify-center mb-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-[#593d2e] mb-2">Expert Approved</h3>
+                    <p class="text-gray-600 text-sm">Veterinarian recommended products and brands</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-[#b97456] rounded-full flex items-center justify-center mb-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-[#593d2e] mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600 text-sm">Quick and reliable shipping to your doorstep</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="relative z-10 pb-20">
+        <div class="container mx-auto px-6 py-8">
         <!-- Shop By Pet -->
         <h2 class="text-2xl font-bold text-gray-800 mb-6">Shop By Pet 🐾</h2>
         <div class="grid grid-cols-4 gap-6 mb-12">
@@ -203,4 +263,9 @@
             });
         });
     </script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    @include('components.footer')
 </x-app-layout>
