@@ -1,36 +1,28 @@
 <x-app-layout>
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center"
-             style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.png');">
+     <section class="relative bg-cover bg-center bg-no-repeat"
+             style="background-image: url('/images/about-hero-bg.png');">
         <div class="max-w-7xl mx-auto px-6 py-24 flex flex-col lg:flex-row items-center">
             <!-- Left -->
-            <div class="lg:w-1/2 text-white space-y-6">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight">Pet care, up close and personal.</h1>
-                <p class="text-xl text-gray-200 leading-relaxed">
-                    We believe pets deserve the best. Our mission is to provide trusted, loving care and quality products for every furry (or scaly!) friend in your family.
+            <div class="lg:w-1/2 text-gray-800 space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold">Pet care, up close and personal.</h1>
+                <p class="text-lg text-gray-600">
+                    We believe pets deserve the best. Our mission is to provide trusted, loving care and quality products for every furry (or scaly!) friend.
                 </p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="/shop"
-                       class="px-8 py-4 bg-[#b97456] text-white rounded-lg hover:bg-[#593d2e] transition-all duration-300 text-center font-semibold">
+                <div class="flex space-x-4">
+                    <a href="#shop"
+                       class="px-6 py-3 bg-[#b97456] text-white rounded-lg hover:bg-[#593d2e] transition">
                         Shop Now
                     </a>
-                    <a href="/discover"
-                       class="px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-gray-800 transition-all duration-300 text-center font-semibold">
+                    <a href="#discover"
+                       class="px-6 py-3 border-2 border-[#b97456] text-[#b97456] rounded-lg hover:bg-[#b97456] hover:text-white transition">
                         Discover More
                     </a>
                 </div>
             </div>
             <!-- Right -->
             <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
-                <div class="relative">
-                    <img src="/images/about.jpg" alt="Happy pets" class="max-h-[500px] rounded-2xl shadow-2xl">
-                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
-                        <div class="flex items-center space-x-2">
-                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                            <span class="text-sm font-semibold text-gray-800">Trusted by 10,000+ pet owners</span>
-                        </div>
-                    </div>
-                </div>
+                <img src="/images/about.jpg" alt="Pets illustration" class="max-h-[400px]">
             </div>
         </div>
     </section>
