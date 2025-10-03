@@ -59,7 +59,7 @@
     </section>
 
     <!-- Contact Form + Map (Overlapping Section) -->
-    <section class="relative -mt-20 z-10">
+    <section class="relative -mt-40 z-10">
         <div class="max-w-7xl mx-auto px-6">
             <div class="bg-white shadow-lg rounded-xl overflow-hidden">
                 <div class="grid md:grid-cols-2 gap-0">
@@ -112,4 +112,5 @@
     
     <!-- Footer -->
     @include('components.footer')
+
 </x-app-layout>
