@@ -59,7 +59,7 @@
     </section>
 
     <!-- Contact Form + Map (Overlapping Section) -->
-    <section class="relative -mt-20 z-60">
+    <section class="relative -mt-20 z-60 pb-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="bg-white shadow-lg rounded-xl overflow-hidden">
                 <div class="grid md:grid-cols-2 gap-0">
