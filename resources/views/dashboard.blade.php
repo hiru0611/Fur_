@@ -33,18 +33,10 @@
             <!-- Right Puppy Image / Video -->
             <div class="flex-1 mt-10 lg:mt-0 flex justify-center">
                 <!-- Image -->
-                <img src="/images/puppy.png" 
-                    alt="Cute Puppy" 
-                    class="mx-auto w-full max-w-[480px] drop-shadow-lg rounded-xl object-contain" 
-                    style="max-width: 100%;">
-
-                <!-- If you want video instead of image, replace above <img> with this: -->
-                <!--
                 <video class="mx-auto w-full max-w-[480px] rounded-xl shadow-lg" autoplay loop muted playsinline>
                     <source src="/videos/home.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                -->
             </div>
         </div>
     </section>
