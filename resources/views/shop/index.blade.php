@@ -87,22 +87,7 @@
         <div class="grid grid-cols-4 gap-10">
             <!-- Sidebar -->
             <aside class="col-span-1">
-                <!-- Search Bar -->
-                <div class="mb-6">
-                    <form method="GET" action="{{ route('shop.index') }}" class="relative">
-                        <input type="text" 
-                               name="search" 
-                               value="{{ request('search') }}"
-                               placeholder="Search products..." 
-                               class="w-full pl-4 pr-16 py-3 bg-[#f5f5f0] border-0 rounded-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#b97456] focus:bg-white transition-all duration-200">
-                        <button type="submit" 
-                                class="absolute right-2 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-[#5C4033] rounded-full flex items-center justify-center hover:bg-[#4a3328] transition-colors duration-200">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
+               
                 
                 <div class="bg-white shadow rounded-lg p-4">
                     <h3 class="font-bold mb-4 flex items-center justify-between">
