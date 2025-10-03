@@ -1,176 +1,307 @@
 <x-app-layout>
-    <!-- Hero Section -->
-    <section class="relative min-h-screen bg-gradient-to-br from-[#f8f4f0] via-[#fdf6f1] to-[#f0e6d2] overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-20 left-10 w-32 h-32 bg-[#b97456] rounded-full animate-pulse"></div>
-            <div class="absolute top-40 right-20 w-24 h-24 bg-[#d4a574] rounded-full animate-bounce"></div>
-            <div class="absolute bottom-20 left-1/4 w-16 h-16 bg-[#8b5a3c] rounded-full animate-ping"></div>
-        </div>
+    <!-- Hero Section - Enhanced -->
+    <section class="relative min-h-screen overflow-hidden bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+             style="background-image: url('/images/about.jpg');"></div>
         
-        <div class="relative max-w-7xl mx-auto px-6 py-24 flex flex-col lg:flex-row items-center min-h-screen">
-            <!-- Left -->
-            <div class="lg:w-1/2 text-gray-800 space-y-8 animate-fade-in-up">
-                <div class="space-y-6">
-                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
-                        <span class="text-[#b97456]">Pet care,</span><br>
-                        <span class="text-gray-800">up close and personal.</span>
-                    </h1>
-                    <p class="text-xl text-gray-600 leading-relaxed">
-                    We believe pets deserve the best. Our mission is to provide trusted, loving care and quality products for every furry (or scaly!) friend.
-                </p>
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-[#b97456] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center min-h-screen">
+            <!-- Left Text Content -->
+            <div class="flex-1 space-y-8 lg:pr-16 animate-fade-in-up">
+                <!-- Badge -->
+                <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-10 rounded-full border border-[#b97456] border-opacity-20">
+                    <span class="text-[#b97456] font-semibold text-sm uppercase tracking-wider">🐾 About Us</span>
                 </div>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="#shop"
-                       class="group px-8 py-4 bg-[#b97456] text-white rounded-xl hover:bg-[#593d2e] transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center font-semibold">
-                        <span class="flex items-center justify-center space-x-2">
-                            <span>Shop Now</span>
-                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                            </svg>
-                        </span>
+                
+                <!-- Main Heading -->
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-tight">
+                    Pet Care, <span class="text-[#b97456]">Up Close</span><br>
+                    <span class="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+                        And Personal
+                    </span>
+                </h1>
+                
+                <!-- Description -->
+                <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
+                    We believe pets deserve the best. Our mission is to provide trusted, loving care and quality products for every furry (or scaly!) friend in our community.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <a href="#shop" class="group inline-flex items-center px-8 py-4 bg-[#b97456] text-white rounded-2xl shadow-lg hover:bg-[#a56348] hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-lg font-bold">
+                        <span>Shop Now</span>
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
                     </a>
-                    <a href="#discover"
-                       class="group px-8 py-4 border-2 border-[#b97456] text-[#b97456] rounded-xl hover:bg-[#b97456] hover:text-white transition-all duration-300 transform hover:scale-105 text-center font-semibold">
-                        <span class="flex items-center justify-center space-x-2">
-                            <span>Discover More</span>
-                            <svg class="w-5 h-5 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </span>
+                    <a href="#discover" class="group inline-flex items-center px-8 py-4 border-2 border-[#b97456] text-[#b97456] rounded-2xl hover:bg-[#b97456] hover:text-white transition-all duration-300 text-lg font-bold">
+                        <span>Discover More</span>
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
                     </a>
                 </div>
             </div>
-            <!-- Right -->
-            <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center animate-fade-in-right">
+
+            <!-- Right Image Section -->
+            <div class="flex-1 mt-12 lg:mt-0 animate-fade-in-right">
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-[#b97456] to-[#d4a574] rounded-3xl blur opacity-20 animate-pulse"></div>
-                    <img src="/images/about.jpg" alt="Pets illustration" class="relative max-h-[500px] rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    <!-- Image Container with Enhanced Styling -->
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <img src="/images/about.jpg" alt="About Us - Pet Care" class="w-full h-auto max-w-[600px] mx-auto block object-cover">
+                        
+                        <!-- Image Overlay Gradient -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-[#b97456] rounded-full flex items-center justify-center shadow-lg animate-bounce">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-orange-400 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="py-24 bg-gradient-to-b from-white to-[#faf9f6] relative overflow-hidden">
-        <!-- Background Elements -->
+    <!-- Company Story Section -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-24 relative overflow-hidden">
+        <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-10 right-10 w-40 h-40 bg-[#b97456] rounded-full animate-pulse"></div>
-            <div class="absolute bottom-10 left-10 w-32 h-32 bg-[#d4a574] rounded-full animate-bounce"></div>
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23b97456" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
         </div>
-        
+
         <div class="relative max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
             <div class="text-center mb-16 animate-fade-in-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                    What our <span class="text-[#b97456]">customers</span> say
+                <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-10 rounded-full border border-[#b97456] border-opacity-20 mb-6">
+                    <span class="text-[#b97456] font-semibold text-sm uppercase tracking-wider">📖 Our Story</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Passionate About <span class="text-[#b97456]">Pet Care</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Don't just take our word for it - hear from pet parents who trust us with their furry family members
+                    Founded with love and dedication, we've been serving the pet community for over a decade, building trust one paw at a time.
                 </p>
             </div>
-            
+
+            <!-- Mission, Vision, Values Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up">
+                    <div class="w-16 h-16 bg-gradient-to-br from-[#b97456] to-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To provide exceptional pet care products and services that enhance the health, happiness, and well-being of pets and their families.
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up animation-delay-200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        To be the leading pet care destination where every pet parent finds everything they need to give their beloved companions the best life possible.
+                    </p>
+                </div>
+
+                <!-- Values -->
+                <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up animation-delay-400">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-4">Our Values</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Compassion, quality, trust, and innovation guide everything we do. We believe in treating every pet as if they were our own family.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="bg-gradient-to-r from-[#b97456] to-orange-500 py-20 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="white" fill-opacity="0.1"%3E%3Cpath d="M20 20c0-11.046-8.954-20-20-20v20h20z"/%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Stat 1 -->
+                <div class="animate-fade-in-up">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2">10+</div>
+                    <div class="text-white text-opacity-90 font-medium">Years Experience</div>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="animate-fade-in-up animation-delay-200">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2">50K+</div>
+                    <div class="text-white text-opacity-90 font-medium">Happy Customers</div>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="animate-fade-in-up animation-delay-400">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2">1000+</div>
+                    <div class="text-white text-opacity-90 font-medium">Products</div>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="animate-fade-in-up animation-delay-600">
+                    <div class="text-4xl md:text-5xl font-black text-white mb-2">24/7</div>
+                    <div class="text-white text-opacity-90 font-medium">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials - Enhanced -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-24 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23b97456" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-10 rounded-full border border-[#b97456] border-opacity-20 mb-6">
+                    <span class="text-[#b97456] font-semibold text-sm uppercase tracking-wider">💬 Testimonials</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    What Our <span class="text-[#b97456]">Customers</span> Say
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Don't just take our word for it. Here's what our happy pet parents have to say about their experience with us.
+                </p>
+            </div>
+
+            <!-- Testimonials Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up">
+                <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up">
                     <div class="flex items-center mb-6">
-                        <div class="flex text-[#b97456]">
+                        <div class="flex text-yellow-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
-                        "The best pet store ever! My cat absolutely loves the food, and I trust their products completely. The staff is knowledgeable and caring."
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "The best pet store ever! My cat absolutely loves the food, and I trust their products completely. The staff is incredibly knowledgeable and caring."
                     </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="h-12 w-12 bg-gradient-to-br from-[#b97456] to-[#d4a574] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#b97456] to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                             SJ
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-800">Sarah Johnson</p>
+                            <p class="font-bold text-gray-900">Sarah Johnson</p>
                         <p class="text-sm text-gray-500">Cat Owner</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.2s">
+                <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up animation-delay-200">
                     <div class="flex items-center mb-6">
-                        <div class="flex text-[#b97456]">
+                        <div class="flex text-yellow-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
-                        "Amazing service and quality products! My dog has never been happier. The delivery is fast and the customer service is outstanding."
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "Outstanding service and quality products! My dog's health has improved significantly since switching to their recommended food. Highly recommend!"
                     </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="h-12 w-12 bg-gradient-to-br from-[#d4a574] to-[#b97456] rounded-full flex items-center justify-center text-white font-bold text-lg">
-                            MR
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                            MC
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-800">Mike Rodriguez</p>
+                            <p class="font-bold text-gray-900">Mike Chen</p>
                             <p class="text-sm text-gray-500">Dog Owner</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up md:col-span-2 lg:col-span-1" style="animation-delay: 0.4s">
+                <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 animate-fade-in-up animation-delay-400">
                     <div class="flex items-center mb-6">
-                        <div class="flex text-[#b97456]">
+                        <div class="flex text-yellow-400">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
-                        "Perfect for my exotic pets! The variety and quality are unmatched. My reptiles and birds are thriving with their products."
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "Amazing customer service and fast delivery! The team really cares about pets and it shows in everything they do. My birds love their treats!"
                     </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="h-12 w-12 bg-gradient-to-br from-[#8b5a3c] to-[#b97456] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
                             AL
                         </div>
                         <div>
-                            <p class="font-semibold text-gray-800">Alex Liu</p>
-                            <p class="text-sm text-gray-500">Exotic Pet Owner</p>
+                            <p class="font-bold text-gray-900">Anna Lopez</p>
+                            <p class="text-sm text-gray-500">Bird Owner</p>
                         </div>
                     </div>
                 </div>
@@ -178,235 +309,264 @@
         </div>
     </section>
 
-    <!-- Pet Image Strip -->
-    <section class="py-20 bg-gradient-to-r from-[#faf9f6] to-[#f8f4f0] relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-1/4 left-1/4 w-20 h-20 bg-[#b97456] rounded-full animate-pulse"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-16 h-16 bg-[#d4a574] rounded-full animate-bounce"></div>
-        </div>
-        
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12 animate-fade-in-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Caring for <span class="text-[#b97456]">All Creatures</span>
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    From the smallest hamster to the largest dog, we provide quality care for every pet
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center">
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up">
-                    <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl">
-                        <img src="/images/cat1.png" alt="Cat" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-2 left-2 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Cats
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.1s">
-                    <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl">
-                        <img src="/images/dog-bowl.png" alt="Dog" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-2 left-2 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Dogs
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.2s">
-                    <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl">
-                        <img src="/images/dog-toys.png" alt="Small Pets" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-2 left-2 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Small Pets
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.3s">
-                    <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl">
-                        <img src="/images/real-food.png" alt="Birds" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-2 left-2 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Birds
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.4s">
-                    <div class="relative overflow-hidden rounded-2xl shadow-lg group-hover:shadow-2xl">
-                        <img src="/images/sleepy-cat.png" alt="Exotic Pets" class="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        <div class="absolute bottom-2 left-2 text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            Exotic Pets
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="py-24 bg-gradient-to-br from-[#f8f4f0] via-[#fdf6f1] to-[#f0e6d2] relative overflow-hidden">
+    <!-- Pet Gallery - Enhanced -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-24 relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-20 right-20 w-32 h-32 bg-[#b97456] rounded-full animate-pulse"></div>
-            <div class="absolute bottom-20 left-20 w-24 h-24 bg-[#d4a574] rounded-full animate-bounce"></div>
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#8b5a3c] rounded-full animate-ping"></div>
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23b97456" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
         </div>
-        
-        <div class="relative max-w-7xl mx-auto px-6 text-center">
-            <div class="mb-16 animate-fade-in-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-                    Meet Our <span class="text-[#b97456]">Expert Team</span>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-10 rounded-full border border-[#b97456] border-opacity-20 mb-6">
+                    <span class="text-[#b97456] font-semibold text-sm uppercase tracking-wider">🐾 Pet Gallery</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Our <span class="text-[#b97456]">Happy</span> Customers
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Our passionate professionals are dedicated to providing the best care for your beloved pets
+                    Meet some of the adorable pets we're proud to serve. Every pet deserves the best care and love.
                 </p>
             </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                <!-- Team Member 1 -->
+
+            <!-- Pet Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
                 <div class="group animate-fade-in-up">
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg transform group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/pet1.png" alt="Kangaroo" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-semibold">Kangaroo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group animate-fade-in-up animation-delay-200">
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg transform group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/pet2.png" alt="Chameleon" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-semibold">Chameleon</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group animate-fade-in-up animation-delay-400">
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg transform group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/pet3.png" alt="Guinea pigs" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-semibold">Guinea Pigs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group animate-fade-in-up animation-delay-600">
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg transform group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/pet4.png" alt="Cat carrier" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-semibold">Cat Carrier</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group animate-fade-in-up animation-delay-800">
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg transform group-hover:scale-105 transition-transform duration-500">
+                        <img src="/images/pet5.png" alt="Cat sunglasses" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-semibold">Stylish Cat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section - Enhanced -->
+    <section class="bg-gradient-to-br from-[#b97456] via-orange-500 to-red-500 py-24 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="white" fill-opacity="0.1"%3E%3Cpath d="M20 20c0-11.046-8.954-20-20-20v20h20z"/%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-white bg-opacity-20 rounded-full animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-pulse animation-delay-2000"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div class="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 rounded-full border border-white border-opacity-30 mb-6">
+                    <span class="text-white font-semibold text-sm uppercase tracking-wider">👥 Our Team</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+                    Meet Our <span class="text-yellow-300">Expert</span> Team
+                </h2>
+                <p class="text-xl text-white text-opacity-90 max-w-3xl mx-auto">
+                    Our passionate team of pet care professionals is dedicated to providing the best service for you and your furry friends.
+                </p>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="group bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-opacity-20 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up">
                     <div class="relative mb-6">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-[#b97456] to-[#d4a574] rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative h-48 w-48 mx-auto rounded-full overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:scale-105">
-                            <div class="h-full w-full bg-gradient-to-br from-[#b97456] to-[#d4a574] flex items-center justify-center text-white text-6xl font-bold">
-                                DE
-                            </div>
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+                            <img src="/images/team1.jpg" alt="Dr. Emily" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 w-12 h-12 bg-gradient-to-br from-[#b97456] to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#b97456] transition-colors duration-300">Dr. Emily Rodriguez</h3>
-                    <p class="text-lg text-[#b97456] font-semibold mb-3">Lead Veterinarian</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        With over 10 years of experience in veterinary medicine, Dr. Emily specializes in preventive care and emergency medicine for all types of pets.
+                    <h3 class="text-2xl font-black text-white mb-2">Dr. Emily Rodriguez</h3>
+                    <p class="text-white text-opacity-80 font-medium mb-4">Lead Veterinarian</p>
+                    <p class="text-white text-opacity-70 text-sm leading-relaxed">
+                        With over 10 years of experience, Dr. Emily specializes in preventive care and emergency medicine for all types of pets.
                     </p>
-                    <div class="flex justify-center space-x-4 mt-6">
-                        <div class="w-10 h-10 bg-[#b97456] rounded-full flex items-center justify-center text-white hover:bg-[#593d2e] transition-colors duration-300 cursor-pointer">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </div>
-                        <div class="w-10 h-10 bg-[#b97456] rounded-full flex items-center justify-center text-white hover:bg-[#593d2e] transition-colors duration-300 cursor-pointer">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Team Member 2 -->
-                <div class="group animate-fade-in-up" style="animation-delay: 0.2s">
+                <div class="group bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-opacity-20 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up animation-delay-200">
                     <div class="relative mb-6">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-[#d4a574] to-[#b97456] rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative h-48 w-48 mx-auto rounded-full overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:scale-105">
-                            <div class="h-full w-full bg-gradient-to-br from-[#d4a574] to-[#b97456] flex items-center justify-center text-white text-6xl font-bold">
-                                JC
-                            </div>
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+                            <img src="/images/team2.jpg" alt="James Carter" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#b97456] transition-colors duration-300">James Carter</h3>
-                    <p class="text-lg text-[#b97456] font-semibold mb-3">Pet Nutritionist</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        James is a certified pet nutritionist with expertise in creating balanced diets for pets of all ages and health conditions.
+                    <h3 class="text-2xl font-black text-white mb-2">James Carter</h3>
+                    <p class="text-white text-opacity-80 font-medium mb-4">Pet Nutritionist</p>
+                    <p class="text-white text-opacity-70 text-sm leading-relaxed">
+                        James is a certified pet nutritionist who helps pet parents choose the best diet for their furry companions' health and happiness.
                     </p>
-                    <div class="flex justify-center space-x-4 mt-6">
-                        <div class="w-10 h-10 bg-[#b97456] rounded-full flex items-center justify-center text-white hover:bg-[#593d2e] transition-colors duration-300 cursor-pointer">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </div>
-                        <div class="w-10 h-10 bg-[#b97456] rounded-full flex items-center justify-center text-white hover:bg-[#593d2e] transition-colors duration-300 cursor-pointer">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Team Member 3 -->
-                <div class="group animate-fade-in-up sm:col-span-2 lg:col-span-1" style="animation-delay: 0.4s">
+                <div class="group bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 text-center hover:bg-opacity-20 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up animation-delay-400">
                     <div class="relative mb-6">
-                        <div class="absolute -inset-4 bg-gradient-to-r from-[#8b5a3c] to-[#b97456] rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative h-48 w-48 mx-auto rounded-full overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-300 transform group-hover:scale-105">
-                            <div class="h-full w-full bg-gradient-to-br from-[#8b5a3c] to-[#b97456] flex items-center justify-center text-white text-6xl font-bold">
-                                SL
-                            </div>
+                        <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-2xl transform group-hover:scale-110 transition-transform duration-300">
+                            <img src="/images/team3.jpg" alt="Sophia Lee" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-2 -right-2 w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-2 group-hover:text-[#b97456] transition-colors duration-300">Sophia Lee</h3>
-                    <p class="text-lg text-[#b97456] font-semibold mb-3">Pet Behaviorist & Trainer</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Sophia is a certified animal behaviorist who helps pets and their owners build stronger bonds through positive reinforcement training.
+                    <h3 class="text-2xl font-black text-white mb-2">Sophia Lee</h3>
+                    <p class="text-white text-opacity-80 font-medium mb-4">Pet Trainer</p>
+                    <p class="text-white text-opacity-70 text-sm leading-relaxed">
+                        Sophia is a certified pet trainer with a gentle approach, helping pets and their families build strong, loving relationships.
                     </p>
-                    <div class="flex justify-center space-x-4 mt-6">
-                        <div class="w-10 h-10 bg-[#b97456] rounded-full flex items-center justify-center text-white hover:bg-[#593d2e] transition-colors duration-300 cursor-pointer">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                            </svg>
-                        </div>
-                        <div class="w-10 h-10 bg-[#b97456] rounded-full flex items-center justify-center text-white hover:bg-[#593d2e] transition-colors duration-300 cursor-pointer">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Logo Strip -->
-    <section class="py-20 bg-gradient-to-r from-white to-[#faf9f6] relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-[#b97456] rounded-full animate-pulse"></div>
-            <div class="absolute top-1/3 right-1/3 w-20 h-20 bg-[#d4a574] rounded-full animate-bounce"></div>
+    <!-- Call to Action Section -->
+    <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-24 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23b97456" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
         </div>
         
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12 animate-fade-in-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                    Trusted by <span class="text-[#b97456]">Leading Brands</span>
+        <!-- Floating Orbs -->
+        <div class="absolute top-20 right-20 w-32 h-32 bg-[#b97456] rounded-full opacity-20 animate-pulse"></div>
+        <div class="absolute bottom-20 left-20 w-24 h-24 bg-orange-400 rounded-full opacity-30 animate-bounce"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 text-center">
+            <div class="animate-fade-in-up">
+                <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-20 rounded-full border border-[#b97456] border-opacity-30 mb-6">
+                    <span class="text-[#b97456] font-bold text-sm uppercase tracking-wider">🚀 Ready to Start?</span>
+                </div>
+                
+                <h2 class="text-5xl md:text-6xl font-black text-white leading-tight mb-6">
+                    Join Our <span class="text-[#b97456]">Pet Family</span> Today!
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    We partner with the most trusted pet care brands to bring you the highest quality products
+                
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+                    Experience the difference that passionate pet care makes. Let us help you give your beloved companions the love and care they deserve.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="#shop" class="group inline-flex items-center px-8 py-4 bg-[#b97456] text-white rounded-2xl shadow-lg hover:bg-[#a56348] hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-lg font-bold">
+                        <span>Shop Now</span>
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="group inline-flex items-center px-8 py-4 border-2 border-white text-white rounded-2xl hover:bg-white hover:text-gray-900 transition-all duration-300 text-lg font-bold">
+                        <span>Contact Us</span>
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners - Enhanced -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-20 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23b97456" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in-up">
+                <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-10 rounded-full border border-[#b97456] border-opacity-20 mb-6">
+                    <span class="text-[#b97456] font-semibold text-sm uppercase tracking-wider">🤝 Trusted Partners</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+                    Trusted by <span class="text-[#b97456]">Leading</span> Brands
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We're proud to partner with the most trusted brands in pet care, ensuring quality and reliability for your furry friends.
                 </p>
             </div>
-            
+
+            <!-- Logo Grid -->
             <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center">
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up">
-                    <div class="h-16 w-24 bg-gradient-to-br from-[#b97456] to-[#d4a574] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-xl">
-                        Brand
+                <div class="group animate-fade-in-up">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="/images/logo1.png" alt="Partner Logo 1" class="h-12 mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                 </div>
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.1s">
-                    <div class="h-16 w-24 bg-gradient-to-br from-[#d4a574] to-[#8b5a3c] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-xl">
-                        PetPro
+                <div class="group animate-fade-in-up animation-delay-200">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="/images/logo2.png" alt="Partner Logo 2" class="h-12 mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                 </div>
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.2s">
-                    <div class="h-16 w-24 bg-gradient-to-br from-[#8b5a3c] to-[#b97456] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-xl">
-                        Care+
+                <div class="group animate-fade-in-up animation-delay-400">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="/images/logo3.png" alt="Partner Logo 3" class="h-12 mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                 </div>
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.3s">
-                    <div class="h-16 w-24 bg-gradient-to-br from-[#b97456] to-[#d4a574] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-xl">
-                        VetMax
+                <div class="group animate-fade-in-up animation-delay-600">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="/images/logo4.png" alt="Partner Logo 4" class="h-12 mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                 </div>
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.4s">
-                    <div class="h-16 w-24 bg-gradient-to-br from-[#d4a574] to-[#8b5a3c] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-xl">
-                        PetLife
+                <div class="group animate-fade-in-up animation-delay-800">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="/images/logo5.png" alt="Partner Logo 5" class="h-12 mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                 </div>
-                <div class="group transform hover:scale-110 transition-all duration-300 animate-fade-in-up" style="animation-delay: 0.5s">
-                    <div class="h-16 w-24 bg-gradient-to-br from-[#8b5a3c] to-[#b97456] rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-xl">
-                        Happy
+                <div class="group animate-fade-in-up animation-delay-1000">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                        <img src="/images/logo6.png" alt="Partner Logo 6" class="h-12 mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
                 </div>
             </div>
@@ -416,62 +576,3 @@
     <!-- Footer -->
     @include('components.footer')
 </x-app-layout>
-
-<style>
-    @keyframes fade-in-up {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes fade-in-right {
-        from {
-            opacity: 0;
-            transform: translateX(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .animate-fade-in-up {
-        animation: fade-in-up 0.8s ease-out forwards;
-    }
-
-    .animate-fade-in-right {
-        animation: fade-in-right 0.8s ease-out forwards;
-    }
-
-    .shadow-3xl {
-        box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
-    }
-
-    /* Smooth scrolling for anchor links */
-    html {
-        scroll-behavior: smooth;
-    }
-
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #b97456;
-        border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #593d2e;
-    }
-</style>
