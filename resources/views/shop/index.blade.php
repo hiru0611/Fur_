@@ -175,9 +175,6 @@
 
      <div class="py-16"></div>
 
-    <!-- Footer -->
-    @include('components.footer')
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const priceRange = document.getElementById('priceRange');
