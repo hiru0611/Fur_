@@ -81,6 +81,9 @@
                     </div>
                 </div>
 
+                <div class="py-16"></div>
+    
+
                 <!-- Pet Categories Showcase -->
                 <div class="mb-20">
                     <h2 class="text-2xl font-bold text-[#593d2e] mb-12 text-center">Pets We Love</h2>
@@ -107,6 +110,9 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="py-16"></div>
+    
 
                 <!-- Testimonials -->
                 <div class="mb-20">
@@ -138,6 +144,9 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="py-16"></div>
+    
 
                 <!-- Our Team -->
                 <div class="mb-20">
