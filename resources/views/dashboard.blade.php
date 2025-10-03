@@ -30,7 +30,7 @@
                     muted 
                     loop 
                     playsinline
-                    class="mx-auto w-full max-w-[520px] drop-shadow-lg rounded-lg" 
+                    class="mx-auto w-full max-w-[520px]" 
                     style="width:520px;max-width:100%;"
                     alt="Home Video">
                     Your browser does not support the video tag.
