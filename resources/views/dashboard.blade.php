@@ -2,7 +2,7 @@
     <!-- HERO (cream background + optional background image) -->
     <section
         class="relative bg-[] overflow-hidden"
-        style="background-image: url('/images/hero-bg.png'); background-position: bottom; background-size: cover;">
+        style="background-image: url('/images/bgimg.png'); background-position: bottom; background-size: cover;">
         <!-- optional overlay to keep cream tone over background image -->
         <div class="absolute inset-0 bg-[] opacity-90 pointer-events-none"></div>
 
