@@ -38,17 +38,27 @@
             @foreach($categories as $category)
                 <a href="{{ route('shop.category', $category->slug) }}" 
                    class="bg-white shadow rounded-xl p-6 flex flex-col items-center hover:shadow-lg cursor-pointer transition-all duration-200 hover:scale-105">
-                    <img src="{{ asset('images/icons/' . $category->slug . '.png') }}" 
-                         class="h-16 mb-3" 
-                         alt="{{ $category->name }}"
-                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="h-16 mb-3 flex items-center justify-center text-4xl" style="display:none;">
-                        @if($category->slug === 'dog') 🐕
-                        @elseif($category->slug === 'cat') 🐱
-                        @elseif($category->slug === 'fish') 🐠
-                        @elseif($category->slug === 'rabbit') 🐰
-                        @endif
-                    </div>
+                    @if($category->slug === 'dog')
+                        <img src="{{ asset('images/dog.png') }}" 
+                             class="h-20 mb-3 object-contain" 
+                             alt="{{ $category->name }}">
+                    @elseif($category->slug === 'cat')
+                        <img src="{{ asset('images/cat.png') }}" 
+                             class="h-20 mb-3 object-contain" 
+                             alt="{{ $category->name }}">
+                    @elseif($category->slug === 'fish')
+                        <img src="{{ asset('images/fish.png') }}" 
+                             class="h-20 mb-3 object-contain" 
+                             alt="{{ $category->name }}">
+                    @elseif($category->slug === 'rabbit')
+                        <img src="{{ asset('images/bunny.png') }}" 
+                             class="h-20 mb-3 object-contain" 
+                             alt="{{ $category->name }}">
+                    @else
+                        <div class="h-20 mb-3 flex items-center justify-center text-4xl">
+                            🐾
+                        </div>
+                    @endif
                     <p class="font-semibold">{{ $category->name }}</p>
                 </a>
             @endforeach
