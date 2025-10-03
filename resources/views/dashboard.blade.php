@@ -278,86 +278,57 @@
     </section>
 
     
-    <!-- DEAL OF THE DAY - Enhanced -->
-    <section class="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-24 relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-0 left-0 w-full h-full" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23b97456" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-        </div>
-        
-        <!-- Floating Orbs -->
-        <div class="absolute top-20 right-20 w-32 h-32 bg-[#b97456] rounded-full opacity-20 animate-pulse"></div>
-        <div class="absolute bottom-20 left-20 w-24 h-24 bg-orange-400 rounded-full opacity-30 animate-bounce"></div>
-
-        <div class="relative max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <!-- DEAL OF THE DAY -->
+    <section class="bg-white py-16">
+        <div class="max-w-[90rem] mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
                 <!-- Left Section - Text Content -->
-                <div class="space-y-8 animate-fade-in-left">
-                    <!-- Badge -->
-                    <div class="inline-flex items-center px-4 py-2 bg-[#b97456] bg-opacity-20 rounded-full border border-[#b97456] border-opacity-30">
-                        <span class="text-[#b97456] font-bold text-sm uppercase tracking-wider">⏰ DEALS OF THE DAY</span>
-                    </div>
-                    
-                    <!-- Heading -->
-                    <h2 class="text-5xl md:text-6xl font-black text-white leading-tight">
-                        The Best Food For Your <span class="text-[#b97456]">Pet!</span>
+                <div class="flex-1 space-y-6">
+                    <p class="text-[#b97456] font-semibold uppercase tracking-wide text-sm">DEALS OF THE DAY</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        The Best Food For Your Pet!
                     </h2>
-                    
-                    <!-- Description -->
-                    <p class="text-xl text-gray-300 max-w-2xl leading-relaxed">
-                        Find all the great deals for pets. <span class="text-[#b97456] font-bold">10% Off</span> our Spring Pet Collection!
+                    <p class="text-lg text-gray-600 max-w-xl">
+                        Find all the great deals for pets. <span class="text-[#b97456] font-semibold">10% Off</span> our Spring Pet Collection!
                     </p>
                     
-                    <!-- Enhanced Timer Section -->
-                    <div class="space-y-6">
-                        <p class="text-white font-semibold text-lg">⏰ Hurry Up! Offer ends in:</p>
-                        <div class="grid grid-cols-4 gap-4">
-                            <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 border border-white border-opacity-20">
-                                <div class="text-3xl font-black text-[#b97456] mb-1">29</div>
-                                <div class="text-sm text-gray-300 font-medium">Days</div>
+                    <!-- Timer Section -->
+                    <div class="space-y-3">
+                        <p class="text-gray-700 font-medium">Hurry Up! Offer ends in:</p>
+                        <div class="flex gap-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#b97456]">29</div>
+                                <div class="text-sm text-gray-600">Days</div>
                             </div>
-                            <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 border border-white border-opacity-20">
-                                <div class="text-3xl font-black text-[#b97456] mb-1">20</div>
-                                <div class="text-sm text-gray-300 font-medium">Hours</div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#b97456]">20</div>
+                                <div class="text-sm text-gray-600">Hrs</div>
                             </div>
-                            <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 border border-white border-opacity-20">
-                                <div class="text-3xl font-black text-[#b97456] mb-1">43</div>
-                                <div class="text-sm text-gray-300 font-medium">Minutes</div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#b97456]">43</div>
+                                <div class="text-sm text-gray-600">Mins</div>
                             </div>
-                            <div class="text-center bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-4 border border-white border-opacity-20">
-                                <div class="text-3xl font-black text-[#b97456] mb-1">24</div>
-                                <div class="text-sm text-gray-300 font-medium">Seconds</div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#b97456]">24</div>
+                                <div class="text-sm text-gray-600">Secs</div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Enhanced Button -->
+                    <!-- Button -->
                     <div class="pt-4">
-                        <a href="#" class="group inline-flex items-center px-8 py-4 bg-[#b97456] text-white rounded-2xl shadow-lg hover:bg-[#a56348] hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 font-bold">
-                            <span>Shop Now</span>
-                            <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        <a href="#" class="inline-block bg-[#b97456] text-white px-4 py-3 rounded-lg hover:bg-[#a56348] transition flex items-center gap-2 text-base font-semibold w-fit">
+                            Learn More
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                             </svg>
                         </a>
                     </div>
                 </div>
 
                 <!-- Right Section - Product Image -->
-                <div class="flex justify-center animate-fade-in-right">
-                    <div class="relative group">
-                        <!-- Glow Effect -->
-                        <div class="absolute -inset-8 bg-gradient-to-r from-[#b97456] to-orange-400 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition duration-1000"></div>
-                        
-                        <!-- Image Container -->
-                        <div class="relative bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 border border-white border-opacity-20 transform group-hover:scale-105 transition-transform duration-500">
-                            <img src="/images/deals.png" alt="Deal Product" class="w-full h-auto max-w-lg object-contain">
-                        </div>
-                        
-                        <!-- Floating Discount Badge -->
-                        <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-[#b97456] to-orange-500 rounded-full flex items-center justify-center shadow-2xl animate-bounce">
-                            <span class="text-white font-black text-lg">10%</span>
-                        </div>
-                    </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="/images/deals.png" alt="Deal Product" class="w-full max-w-[80rem] h-[40rem] object-contain">
                 </div>
             </div>
         </div>
