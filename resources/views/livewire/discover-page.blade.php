@@ -127,18 +127,6 @@
             </section>
         </main>
     </div>
-
-    <!-- Call to action -->
-    <section class="bg-[#fef6f3] py-12 mt-16">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div>
-                <h2 class="text-2xl font-bold mb-2">Help Support, Stray Animal in Need!</h2>
-                <p class="text-gray-600 mb-4">They need you...</p>
-                <a href="#" class="bg-[#b97456] text-white px-6 py-3 rounded-lg shadow hover:bg-[#a56347] transition">Donate Now</a>
-            </div>
-            <img src="/images/support/cat.png" class="w-48" alt="Support Animals">
-        </div>
-    </section>
 </div>
 
 <script>
